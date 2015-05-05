@@ -1,5 +1,10 @@
-1. Se hace COMMIT:
+1. Se hace COMMIT y PUSH:
 
 Al acabar una funcionalidad
 Al irse para casa
 Se comenta siempre lo que se hizo
+
+2. Se hace PULL:
+Cuando queremos obtener los últimos cambios
+
+IMPORTANTE: no trabajar varias personas en un archivo A LA VEZ
