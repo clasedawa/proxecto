@@ -1,1 +1,5 @@
-hola
+1. Se hace COMMIT:
+
+Al acabar una funcionalidad
+Al irse para casa
+Se comenta siempre lo que se hizo
