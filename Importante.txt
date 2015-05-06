@@ -5,6 +5,7 @@ Al irse para casa
 Se comenta siempre lo que se hizo
 
 2. Se hace PULL:
+La primera vez que ejecutamos la maquina virtual antes de hacer nada
 Cuando queremos obtener los últimos cambios
 
-IMPORTANTE: no trabajar varias personas en un archivo A LA VEZ
+IMPORTANTE: no trabajar varias personas en un archivo A LA VEZ 
