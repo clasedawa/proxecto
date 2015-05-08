@@ -9,3 +9,5 @@ La primera vez que ejecutamos la maquina virtual antes de hacer nada
 Cuando queremos obtener los últimos cambios
 
 IMPORTANTE: no trabajar varias personas en un archivo A LA VEZ 
+
+Prueba
