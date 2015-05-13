@@ -4,7 +4,7 @@
 	$password="";
 	
 	// Cuando le de a iniciar sesión
-	if(isset($_POST["sesion"])){
+	if(isset($_POST["entrar"])){
 		$dni = $_POST["dni"];
 		$password = $_POST["password"];
 		

@@ -17,7 +17,7 @@
                         </div>
                     <div class="row">
                         <div class="col-sm-8"></div>
-                        <div class="col-sm-4 text-right"><input name="entrar" class="btn btn-primary btn-auto" value="Entrar"/></div>
+                        <div class="col-sm-4 text-right"><input type="submit" name="entrar" class="btn btn-primary btn-auto" value="Entrar"/></div>
                         
                     </div>
                     </form> 
