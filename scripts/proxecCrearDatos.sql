@@ -1,3 +1,8 @@
+ -- ********************************************************************************************************************
+ -- 	I N S E R C I Ó N     D E     D A T O S
+ -- ********************************************************************************************************************
+  USE proxeccolec;
+
 
 -- OPERACIONES TABLA ANHO
 
@@ -593,34 +598,5 @@ insert not_alu (notAlu_usuId,notAlu_asiID,notAlu_evaId,notAlu_notId,notAlu_texto
 
  
  
- -- ********************************************************************************************************************
- -- 	V I S T A S
- -- ********************************************************************************************************************
- 
- create view vAsiPro (Anho,Ciclo,Asignatura,Profesor)
-	as select  anhAnho as anho, cicNom as ciclo,  asiNom as asignatura, usuNom as profesor from asi_pro 
-			inner join anho  on asiPro_anhId=anhId 
-            inner join asignatura on asiPro_asiID=asiID 
-            inner join ciclo on asiCicID=cicID
-            inner join usuario on asiPro_usuId=usuId;
- 
- select * from vAsiPro;
- 
- create view vNotAlu (Anho,Ciclo,Asignatura,Alumno,Evaluacion,Criterio,Valoracion)
-	as	select  anhAnho as Anho, cicNom as Ciclo,  asiNom as Asignatura, usuNom as Alumno, evaNom as evaluacion, notNom as Criterio, notAlu_texto as Valoracion from not_alu 
-			inner join evaluacion on notAlu_evaId=evaId
-            inner join anho  on evaAnhId=anhId 
-            inner join asignatura on notAlu_asiID=asiID 
-            inner join ciclo on asiCicID=cicID
-            inner join usuario on notAlu_usuId=usuId
-            inner join nota on notAlu_notId=notId;
-            
-            
-select * from vNotAlu;
 
-create view vRolUsu (Nombre, Apellidos, Rol)
-	as select usuNom as nombre, usuApe as Apellidos, rolNom as Rol from rol_usu 
-		inner join usuario on rolUsu_usuID=usuId inner join rol on rolUsu_rolID=rolID;
-        
-select * from vRolUsu
 
