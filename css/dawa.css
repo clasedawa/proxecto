@@ -1,0 +1,40 @@
+body{background:#f4f4f4; font-family: 'Lato', sans-serif;}
+a {color: #3598DB;}
+#login .row{margin:0;}
+#login .col-sm-4{padding-right: 0;}
+.btn-primary{background:#3598DB; border:1px solid #3598DB;  }
+.link-gris{color:#A9A9A9;}
+.btn-auto{width:85px;}
+#login h1{text-align:center; text-transform: uppercase; color:#62707D; font-weight: 700;}
+.well-login{background: #F2F2F2; padding:0;}
+.well-login .box-login{background: #FAFAFA;padding:20px;border-bottom:1px solid #dcdcdc; color:#A0A0A0;}
+.well-login .box-login + .row{padding:20px;}
+
+#login .wrapper input[type="text"] {
+    position: relative; 
+}
+#login label{margin-botttom:-10px;}
+#login .form-group input {padding-left: 25px;} /* This is for the placeholder */
+#login .user:before, #login .password:before {
+    font-family: 'FontAwesome';
+    position: relative;
+    left: 10px;
+    top: 28px; 
+}
+#login .user:before{ content: "\f007";}
+#login .password:before{ content: "\f023";}
+#login .user, #login .password{margin-top:-15px;}
+#login .btn{font-size:18px;}
+#login p{line-height:25px;}
+
+
+/******responsive**********/
+@media (min-width:768px){
+    #login{
+      position: absolute;
+      top: 50%; 
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
+}
