@@ -4,7 +4,7 @@
 <section id="login">
                 <h1>Proyecto grupo DAWA</h1>
                 <div class="well well-login">
-                    <form id="form-login">
+                    <form id="form-login" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
                         <div class="box-login">
                             <div class="form-group">
                                 <label for="dni">DNI</label>

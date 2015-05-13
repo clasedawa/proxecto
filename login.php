@@ -1,4 +1,6 @@
 <?php
+	include 'lib/autenticacion.php';
+	
 	$loginErr="";
 	$dni="";
 	$password="";
@@ -8,19 +10,20 @@
 		$dni = $_POST["dni"];
 		$password = $_POST["password"];
 		
-		$sql = "SELECT * FROM vusurol WHERE dni='$dni' AND password='$password'";
+		$sql = "SELECT * FROM vrolusu WHERE Dni='$dni' AND Pass='$password'";
 		$query = mysqli_query($enlace, $sql);
 		$rowcount = mysqli_num_rows($query);
 		// Si las credenciales son correctas
 		if($rowcount==1){
 			$fila = mysqli_fetch_assoc($query);
-			if($fila["estado"]==1){
+			if($fila["Estado"]==1){
 				session_start();
-				$_SESSION["usuNom"] = $fila["nom"];
-				$_SESSION["usuApe"] = $fila["ape"];
-				$_SESSION["usuID"] = $fila["id"];
-				$_SESSION["usuDNI"] = $fila["dni"];
-				$_SESSION["usuRol"] = $fila["rol"];
+				$_SESSION["usuID"] = $fila["ID"];
+				$_SESSION["usuDNI"] = $fila["Dni"];
+				$_SESSION["usuNom"] = $fila["Nombre"];
+				$_SESSION["usuApe"] = $fila["Apellidos"];
+				$_SESSION["usuRol"] = $fila["Rol"];
+				$_SESSION["usuRolNom"] = $fila["NombreRol"];
 				// Si esta variable no es true redirigimos al usuario al login desde cualquier vista.
 				$_SESSION["loggedin"] = true;
 				header("Location: index.php");
