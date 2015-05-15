@@ -1,10 +1,15 @@
-1. Se hace COMMIT y PUSH:
+
+1. Ctrl+Shift+F para formatear correctamente los 
+archivos modificados antes de commitear asi se evita 
+tener que solucionar conflictos por espacios en blanco.
+
+2. Se hace COMMIT y PUSH:
 
 Al acabar una funcionalidad
 Al irse para casa
 Se comenta siempre lo que se hizo
 
-2. Se hace PULL:
+3. Se hace PULL:
 La primera vez que ejecutamos la maquina virtual antes de hacer nada
 Cuando queremos obtener los últimos cambios
 
