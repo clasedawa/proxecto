@@ -47,7 +47,7 @@
                     <ul>
                         <li><a href="user-view.php"><i class="fa fa-eye"></i> Consulta</a></li>
                         <li><a href="user-edit.php"><i class="fa fa-pencil"></i> Modificación</a></li>
-                        <li><a href="user-add.php"><i class="fa fa-plus-circle"></i> Alta</a></li>
+                        <li><a href="AltaUsuarios.php"><i class="fa fa-plus-circle"></i> Alta</a></li>
                     </ul>
                 </li>
                 <li>
