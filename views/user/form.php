@@ -1,4 +1,6 @@
-
+<?php
+echo $mensaje;
+?>
 <form action="" method="post">
         <div class="row">
             <div class="col-sm-6">
@@ -9,7 +11,7 @@
                 </div>
                 <div class="form-group">
                     <label for="password">Contraseña</label>
-                    <input type="password" class="form-control" name="password"  value="<?php echo $password ?>" required>
+                    <input type="password" class="form-control" name="pass"  value="<?php echo $pass ?>" required>
                 </div>
                  <div class="form-group">
                     <label for="nombre">Nombre</label>
@@ -17,7 +19,7 @@
                 </div>
                 <div class="form-group">
                     <label for="apellidos">Apellidos</label>
-                    <input type="text" class="form-control" name="apellidos" value="<?php echo $apellidos ?>" required>
+                    <input type="text" class="form-control" name="apellido" value="<?php echo $apellido ?>" required>
                 </div>
                 <div class="form-group">
                     <label for="telefono">Teléfono</label>
@@ -36,10 +38,10 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="tipo">Tipo</label>
-                    <select class="form-control" name="tipo">
-                        <option value="profesor" <?php  echo $selectedTipo1 ?> >Profesor</option>
-                        <option value="alumno"  <?php echo $selectedTipo2 ?>>Alumno</option>
+                    <label for="rol">Tipo</label>
+                    <select class="form-control" name="rol">
+                        <option value="1" <?php  echo $selectedTipo1 ?> >Profesor</option>
+                        <option value="2"  <?php echo $selectedTipo2 ?>>Alumno</option>
                     </select>
                 </div>
                 <div class="form-group">
