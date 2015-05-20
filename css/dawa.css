@@ -9,7 +9,7 @@ a {color: #3598DB;}
 .well-login{background: #F2F2F2; padding:0;}
 .well-login .box-login{background: #FAFAFA;padding:20px;border-bottom:1px solid #dcdcdc; color:#A0A0A0;}
 .well-login .box-login + .row{padding:20px;}
-
+.table-responsive form{display:inline-block;}
 #login .wrapper input[type="text"] {
     position: relative; 
 }
@@ -27,14 +27,201 @@ a {color: #3598DB;}
 #login .btn{font-size:18px;}
 #login p{line-height:25px;}
 
+.navbar-brand{color:#2F363E;}
+header.navbar{margin-bottom: 0; border-bottom: 1px solid #E0E0E0;}
+.navbar-static-top{background:#fff; }
+
+.box{
+    border:1px solid #dcdcdc;
+    border-top:8px solid #3598DB;
+    background: #F2F2F2;
+}
+.box h1{
+    font-size:15px;
+    padding-left:20px;
+}
+
+.box h1.blue{
+    color:#3598DB;
+    text-align: center;
+}
+.box h1.blue span{
+    background: #F2F2F2;
+    display: inline-block;
+    padding:10px;
+}
+.box hr{border-top:1px solid #3598DB; width: 95%; margin: -25px auto 15px auto;}
+.box .pagination{margin:0 0 10px 0; float:right;}
+.box .row{margin-left:0; margin-right:0;}
+.table th>span{display:inline-block; float:right;}
+.table th>span>i{display:block;}
+.table th>span>i+i{margin-top:-6px;}
+/* Toggle Styles */
+.navbar-toggle .icon-bar{background:#2F363E;}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #2F363E;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+#sidebar-wrapper h2{
+    text-indent: 20px;
+    color:#68788F;
+    font-size:14px;
+    text-transform:uppercase;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 40;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #2A2D34;
+    border-left:3px solid #3598DB;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav li:active ul,
+.sidebar-nav li:hover ul,
+.sidebar-nav li:focus ul,
+.sidebar-nav li:active .fa-caret-up,
+.sidebar-nav li:hover .fa-caret-up,
+.sidebar-nav li:focus .fa-caret-up{
+    display:block;
+}
+
+.sidebar-nav li ul{
+    padding-left:0;
+    background: #2A2D34;
+    display:none;
+}
+.sidebar-nav .fa-caret-up{
+    float:right;
+    margin-right:10px;
+    margin-top: 15px;
+    display:none;
+}
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#btns{
+    margin-top:10px;
+    text-align: right;
+}
 
 /******responsive**********/
+
+@media (max-width:767px){
+    .table th>span>i{display:none;}
+}
 @media (min-width:768px){
+   
+    .navbar-toggle {
+      display: none;
+    }
+    
     #login{
       position: absolute;
       top: 50%; 
       left: 50%;
       transform: translate(-50%, -50%);
 
+    }
+      #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
     }
 }
