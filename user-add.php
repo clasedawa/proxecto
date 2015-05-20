@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-   
+      <?php require_once 'layout/head.php' ?>
   </head>
   <body>
       <?php  require_once 'layout/header.php';?>
     
       <div id="wrapper">
-       
+            <!-- Sidebar -->
+            <?php require_once 'layout/menu.php'; ?>
+            <!-- /#sidebar-wrapper -->
 
             <!-- Page Content -->
             <div id="page-content-wrapper">
