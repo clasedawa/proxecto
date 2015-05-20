@@ -17,10 +17,6 @@ while($fila = mysqli_fetch_array($resultado)){
 
 
 }
-echo "
-
-		<a href='' class='btn btn-default btn-sm'><span class='glyphicon glyphicon-triangle-left'></span> Inicio</a>
-		";
 mysqli_close($enlace);
 
 
