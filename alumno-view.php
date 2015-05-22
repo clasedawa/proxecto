@@ -17,7 +17,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <!-- zona para los includes según vistas-->
-                            <?php  require_once 'views/alumno/view.php';?>
+                            <?php  require_once 'views/alumno/alumnosPorNota.php';?>
                             <!-- /zona para los includes según vistas-->
                         </div>
                     </div>
