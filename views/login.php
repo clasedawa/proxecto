@@ -1,5 +1,4 @@
 <?php 
-$loginErr="";
     echo $loginErr;
 ?>
 <section id="login">
