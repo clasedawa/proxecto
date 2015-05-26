@@ -1,6 +1,3 @@
-<?php 
-	include 'model/user.php';
-?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -20,11 +17,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <!-- zona para los includes según vistas-->
-                            <?php  
-                            	$usuarios = getUsuarios();        
-                            	                    	
-                            	require_once 'views/user/view.php';
-                            ?>
+                            <?php  require_once 'views/nota/nota.php';?>
                             <!-- /zona para los includes según vistas-->
                         </div>
                     </div>

@@ -10,6 +10,7 @@ a {color: #3598DB;}
 .well-login .box-login{background: #FAFAFA;padding:20px;border-bottom:1px solid #dcdcdc; color:#A0A0A0;}
 .well-login .box-login + .row{padding:20px;}
 .table-responsive form{display:inline-block;}
+.btn-print{margin-bottom:10px;}
 #login .wrapper input[type="text"] {
     position: relative; 
 }
@@ -100,6 +101,7 @@ header.navbar{margin-bottom: 0; border-bottom: 1px solid #E0E0E0;}
     position: absolute;
     margin-right: -250px;
 }
+#nota h2{font-size:18px;color:#3598DB;}
 
 /* Sidebar Styles */
 #sidebar-wrapper h2{
