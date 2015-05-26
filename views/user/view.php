@@ -1,5 +1,5 @@
 <div class="box">
-	<h1><i class="flaticon-boy31"></i> Alumnos</h1>
+	<h1><i class="flaticon-boy31"></i> Alumnos</h1>	
 	<div class="table-responsive">
 		<table class="table table-striped table-bordered">
 		<tr>
@@ -22,26 +22,34 @@
 				Población <span><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></span>
 			</th>
 		</tr>
+		<?php 
+		if($usuarios){
+		       foreach ($usuarios as $usuario){
+    	?>
 		<tr>
 			<td>
-				Nombre
+				<?php echo $usuario['usuNom']; ?>
 			</td>
 			<td>
-				Campo
+				<?php echo $usuario['usuApe']; ?>
 			</td>
 			<td>
-				Campo
+				<?php echo $usuario['usuDni']; ?>
 			</td>
 			<td>
-				Campo
+				<?php echo $usuario['usuTel']; ?>
 			</td>
 			<td>
-				Campo
+				<?php echo $usuario['usuDir']; ?>
 			</td>
             <td>
-				Campo
+				<?php echo $usuario['usuPob']; ?>
 			</td>
 		</tr>
+		<?php 
+             }
+          }
+     	?>     
 
 		</table>
 	</div>
