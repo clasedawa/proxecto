@@ -1,6 +1,15 @@
+<?php 
+	include 'model/asignaturasProfesor.php';
+	include 'lib/permisos.php';
+	session_start();
+?>
 <div id="sidebar-wrapper">
             <h2>Menú</h2>
             <ul class="sidebar-nav">
+             <?php 
+                	if($isAdministrador){
+                		
+               ?>
                 <!-- tienen que llevar la clase .fa-caret-up siempre que haya desplegable-->
                 <li>
                     <a href="#"><i class="flaticon-calendar135"></i> Cursos<i class="fa fa-caret-up"></i></a>
@@ -53,8 +62,26 @@
                 <li>
                     <a href="log.php"><i class="flaticon-gear26"></i> Log</a>
                 </li>
+                <?php 
+                	}
+                	if(!empty($_SESSION) && $isProfesor){
+                		$asignaturasProfesor = getAsignaturasProfesor();
+                		if($asignaturasProfesor){
+                			foreach ($asignaturasProfesor as $asignatura){
+                				    
+                	?>
+                	                		            
+                	
                  <li>
                     <a href="alumno-view.php"><i class="flaticon-gear26"></i> Ejemplo asignatura</a>
                 </li>
+                <?php 
+             				}
+		          		}
+                	}
+		     	?> 
+		     	<li>
+                    <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a>
+                </li>  
             </ul>
         </div>
