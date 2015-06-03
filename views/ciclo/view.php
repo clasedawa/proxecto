@@ -13,18 +13,25 @@
 				Estado <span><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></span>
 			</th>
 		</tr>
+		<?php 
+		if($ciclos){
+		       foreach ($ciclos as $ciclo){
+    	?>
 		<tr>
 			<td>
-				Campo
+				<?php echo $ciclo['cicID']; ?>
 			</td>
 			<td>
-				Campo
+				<?php echo $ciclo['cicNom']; ?>
 			</td>
 			<td>
-				Campo
+				<?php echo $ciclo['cicEst']; ?>
 			</td>
 		</tr>
-
+		<?php 
+             }
+          }
+     	?>   
 		</table>
 	</div>
 </div>

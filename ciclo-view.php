@@ -1,3 +1,6 @@
+<?php 
+	include 'model/ciclo.php';
+?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -16,8 +19,13 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <!-- zona para los includes según vistas-->
-                            <?php  require_once 'views/ciclo/view.php';?>
+                            <!-- zona para los includes según vistas-->                            
+                                
+                            <?php  
+	                            $ciclos = getCiclos();
+	                            
+	                            require_once 'views/ciclo/view.php';
+	                        ?>
                             <!-- /zona para los includes según vistas-->
                         </div>
                     </div>

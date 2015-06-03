@@ -13,18 +13,25 @@
 				Estado <span><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></span>
 			</th>
 		</tr>
+		<?php 
+		if($cursos){
+		       foreach ($cursos as $curso){
+    	?>
 		<tr>
 			<td>
-				Campo
+				<?php echo $curso['anhId']; ?>
 			</td>
 			<td>
-				Campo
+				<?php echo $curso['anhAnho']; ?>
 			</td>
 			<td>
-				Campo
+				<?php echo $curso['anhEst']; ?>
 			</td>
 		</tr>
-
+		<?php 
+             }
+          }
+     	?>   
 		</table>
 	</div>
 </div>

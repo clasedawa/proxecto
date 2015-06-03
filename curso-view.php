@@ -1,3 +1,6 @@
+<?php 
+	include 'model/curso.php';
+?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -17,7 +20,10 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <!-- zona para los includes según vistas-->
-                            <?php  require_once 'views/curso/view.php';?>
+                            <?php
+                            	$cursos = getCursos();
+                            	require_once 'views/curso/view.php';
+                            ?>
                             <!-- /zona para los includes según vistas-->
                         </div>
                     </div>
