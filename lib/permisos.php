@@ -1,4 +1,4 @@
 <?php
-$isAdministrador=false;
-$isProfesor=true;
+$isAdministrador=true;
+$isProfesor=false;
 ?>
