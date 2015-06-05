@@ -16,28 +16,11 @@
 				Estado <span><i class="fa fa-caret-up"></i><i class="fa fa-caret-down"></i></span>
 			</th>
             <th>
-				
+				<?php echo $listaResultados?>				
 			</th>
 		</tr>
 		<tr>
-			<td>
-				Campo
-			</td>
-			<td>
-				Campo
-			</td>
-			<td>
-				Campo
-			</td>
-            <td>
-				Campo
-			</td>
-               <td>
-				<form method="post" action="asignatura-asignar.php">
-                    <input type="submit" value="Asignar asignatura" name="envio" id="envio" class="btn btn-primary"/>
-                    <input type="hidden" value="hid" name="hid" id="hid"/>
-                </form>
-			</td>
+
 		</tr>
 
 		</table>

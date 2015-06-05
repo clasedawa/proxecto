@@ -3,12 +3,14 @@
     <hr/>
     <form action="" method="post">
         <div class="row">
+    		<input type="text" name="idAsignatura" value="<?php echo $asignatura?>">
+    	</div>
+        <div class="row">
             <div class="col-sm-6">
                 <!--recuperar de la base de datos un listado de los ciclos para asignar a la asignatura-->
                  <div class="form-group">
                     <select class="form-control" name="ciclo">
-                        <option value="1" >Profe 1</option>
-                        <option value="0" >Profe 2</option>
+						<?php echo $listaResultados?>
                     </select>
                 </div>
             
