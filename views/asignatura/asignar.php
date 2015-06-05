@@ -3,7 +3,7 @@
     <hr/>
     <form action="" method="post">
         <div class="row">
-    		<input type="text" name="idAsignatura" value="<?php echo $asignatura?>">
+    		<input type="hidden" name="idAsignatura" value="<?php echo $asignatura?>" hidden>
     	</div>
         <div class="row">
             <div class="col-sm-6">

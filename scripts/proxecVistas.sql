@@ -26,8 +26,12 @@
             
 select * from vNotAlu;
 
-create or replace view vRolUsu (ID, Dni, Nombre, Apellidos, Pass, Rol, NombreRol, Estado)
+create or replace view vRolUsu (ID, Dni, Nombre, Apellidos, Passs, Rol, NombreRol, Estado)
 	as select usuId as id, usuDni as Dni, usuNom as nombre, usuApe as Apellidos, usuPas as Pass, rolID as Rol, rolNom as NombreRol, usuEst as Estado from rol_usu 
 		inner join usuario on rolUsu_usuID=usuId inner join rol on rolUsu_rolID=rolID;
         
-select * from vRolUsu
+select * from vRolUsu;
+
+
+-- select asiID,asiNom, (select cicNom from ciclo where asiCicID=cicID)as cicNom,asiEst from asignatura 
+-- select asiID,asiNom, cicNom,asiEst from asignatura inner join ciclo on asiCicID=ciclo.cicID
