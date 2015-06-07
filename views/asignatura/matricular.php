@@ -9,7 +9,7 @@
             <div class="col-sm-6">
                 <!--recuperar de la base de datos un listado de los ciclos para asignar a la asignatura-->
                  <div class="form-group">
-                    <select class="form-control" name="ciclo">
+                    <select class="form-control" name="idUsuario">
 						<?php echo $listaResultados?>
                     </select>
                 </div>

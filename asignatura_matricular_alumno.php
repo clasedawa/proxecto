@@ -15,15 +15,22 @@ if ($_POST['envio']){
 
 // selecionamos la evaluaciones que tiene estado 1(las activas)
 //para la demostración a Bertin con tener activas las de un año es suficiente	
-	$sql = "Select * form evaluacion  WHERE evaest = 1";
+	$sql = "Select * from evaluacion  WHERE evaest = 1";
 	$queryEval = mysqli_query($enlace, $sql);
+	
+// Si selecion algun registro	
+	$rowcountEval = mysqli_num_rows($queryEval);
 
-	if(!$queryEval){
-//Si tenemos alguna de evaluacion activa seleccionamos las notas que podra poner		
-		$sql = "Select * form notas";
+	if($rowcountEval>=1){
+//Si tenemos la select obtuvo algún resultado(recurso) entonces el valor que devuelve es distinto de falso
+//Seleccionamos las notas
+	
+		$sql = "Select * from nota";
 		$queryNotas = mysqli_query($enlace, $sql);
-		
-		if(!$queryNotas){
+
+		// Si selecion algun registro
+		$rowcountNotas = mysqli_num_rows($queryNotas);
+		if($rowcountNotas>=1){
 //si tenemos notas entonces recorremos los dos recursos como si fuera un array bidimensional pero lo hago con
 //while. La ultima instruccion del primer while se usa para devolver el puntero del segundo recurso a la primera posicion 
 			while ($filaEval = mysqli_fetch_assoc($queryEval)){
@@ -32,7 +39,7 @@ if ($_POST['envio']){
 				mysqli_data_seek($queryNotas,0);
 				while ($filaNotas = mysqli_fetch_assoc($queryNotas)){
 					$idNota = $filaNotas['notId'];
-					$sql="insert into  values($idAlumno,$idAsignatura,$idEvaluacion,$idNota,'')";
+					$sql="insert into not_alu values($idAlumno,$idAsignatura,$idEvaluacion,$idNota,'')";
 					$query = mysqli_query($enlace, $sql);				
 				}
 			}			
