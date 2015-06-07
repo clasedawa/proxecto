@@ -4,7 +4,7 @@ include 'lib/autenticacion.php';
 
 if ($_POST['envio']){
 
-	$idProfesor = $_POST['idProfesor'];
+	$idProfesor = $_POST['idUsuario'];
 	$idAsignatura=$_POST['idAsignatura'];
 	
 	$sql = "Select * form asi_pro WHERE asiPro_anhId = 1 and  asiPro_usuId = $idProfesor  and asiPro_asiID= $idAsignatura";

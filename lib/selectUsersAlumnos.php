@@ -1,7 +1,7 @@
 <?php
 include 'lib/autenticacion.php';
 
-$sql = "SELECT * FROM vrolusu WHERE rol=1 and estado=1";
+$sql = "SELECT * FROM vrolusu WHERE rol=2 and estado=1";
 $query = mysqli_query($enlace, $sql);
 
 $listaResultados="";

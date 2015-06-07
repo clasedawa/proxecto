@@ -1,7 +1,7 @@
 <div class="box">
-    <h1 class="blue"><span>Asignar profesor</span></h1>
+    <h1 class="blue"><span>Matricular alumno</span></h1>
     <hr/>
-    <form action="asignatura_profesor_grabar.php" method="post">
+    <form action="asignatura_matricular_alumno.php" method="post">
         <div class="row">
     		<input type="hidden" name="idAsignatura" value="<?php echo $asignatura?>" hidden>
     	</div>
@@ -9,7 +9,7 @@
             <div class="col-sm-6">
                 <!--recuperar de la base de datos un listado de los ciclos para asignar a la asignatura-->
                  <div class="form-group">
-                    <select class="form-control" name="idUsuario">
+                    <select class="form-control" name="ciclo">
 						<?php echo $listaResultados?>
                     </select>
                 </div>
@@ -24,4 +24,4 @@
         </div>    
 </form>
 </div>
-                            
+         
