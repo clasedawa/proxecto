@@ -1,6 +1,6 @@
 <?php
 
-/* 	function get_conexion(){
+ 	function get_conexion(){
 		$servidor='localhost'; 
 		$usuario='clasedawa'; 
 		$password='123abc.'; 
@@ -15,5 +15,5 @@
 			die('Error al conectar con el servidor');
 		}	
 		return $conexion;
-	} */
+	} 
 ?>
